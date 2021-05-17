@@ -1,6 +1,7 @@
 <?php
     require_once 'db/database.php';
     require_once 'db/functions.php';
+
 ?>
 <!doctype html>
 <html lang="ru">
@@ -30,27 +31,27 @@
                 </div>
                 <div class="add-article_text-box">
                     <h3>Параметры</h3>
-                    <input type="number" name="item_characteristic" value="1.2">
+                    <input type="number" name="item_characteristic" value=1.2>
 
                 </div>
                 <div class="add-article_text-box">
                     <h3>Остаток</h3>
-                    <input type="number" name="item_balance" value="77">
+                    <input type="number" name="item_balance" value=77>
 
                 </div>
                 <div class="add-article_text-box">
                     <h3>Движение (шт)</h3>
-                    <input type="number" name="item_movement" value="20">
+                    <input type="number" name="item_movement" value=20>
 
                 </div>
                 <div class="add-article_text-box">
                     <h3>Минимальное кол-во</h3>
-                    <input type="number" name="item_min_balance" value="50">
+                    <input type="number" name="item_min_balance" value=50>
 
                 </div>
                 <div class="add-article_text-box">
                     <h3>Стоимость (руб)</h3>
-                    <input type="number" name="item_cost" value="100">
+                    <input type="number" name="item_cost" value=100>
 
                 </div>
 
