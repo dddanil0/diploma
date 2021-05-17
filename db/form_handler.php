@@ -18,15 +18,3 @@
 	$item_cost = $_POST['item_cost'];
 	$sql = "INSERT INTO `items_production_main` (`item_type`, `item_name`, `item_characteristic`, `item_balance`, `item_movement`, `item_min_balance`, `item_cost`) VALUES ('$item_type', '$item_name', '$item_characteristic', '$item_balance', '$item_movement', '$item_min_balance', '$item_cost')";
     mysqli_query($link,$sql);
-    var_dump($_POST);
-    echo "<br>item_characteristic<br>";
-    var_dump($item_characteristic);
-	echo "<br>item_balance<br>";
-	var_dump($item_balance);
-	echo "<br>item_movement<br>";
-	var_dump($item_movement);
-	echo "<br>item_min_balance<br>";
-	var_dump($item_min_balance);
-	echo "<br>item_cost<br>";
-	var_dump($item_cost);
-
