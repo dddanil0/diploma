@@ -18,7 +18,3 @@
     }
 
 
-    function add_data_to_database() {
-        global $link;
-
-    }
