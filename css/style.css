@@ -6,11 +6,6 @@ body {
 }
 
 
-.storage-form {
-
-
-}
-
 .storage-form form .form-box{
     height: 400px;
     display: flex;
@@ -19,34 +14,39 @@ body {
     flex-wrap: wrap;
     padding: 20px;
 }
-.item_for_crud{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 24px;
-    border-bottom: 1px dotted orange;
-    margin: 0 20px 0 20px;
-}
 
-.item_for_crud:first-child {
-    border-top: 1px dotted orange;
-}
-
-.output-database_info {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.output-item_for_crud {
-    width: 220px;
-    text-align: center;
-    border-right: 1px dotted orange;
-    border-left: 1px dotted orange;
-    color: orange;
+.table_item_for_crud {
     font-size: 20px;
+    text-align: center;
+    margin: 30px auto;
+    width: 1067px;
 }
+
+.table_item_for_crud table {
+    border-spacing: 0;
+}
+
+.table_item_for_crud td {
+    background: #e8edff;
+    border-bottom: 1px solid white;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 8px;
+}
+
+.table_item_for_crud th {
+    font-weight: normal;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid white;
+    color: #039;
+    padding: 8px;
+}
+
+.table_item_for_crud tr:hover td {
+    background: #ccddff;
+}
+
 
 .add-article_text-box {
 
@@ -71,10 +71,18 @@ body {
 }
 
 .submit-button {
+    height: 37px;
+    width: 300px;
+    margin: auto;
+}
+
+.submit-button button {
     border: 1px solid #263560;
-    height: 50px;
+    width: 300px;
+    height: 37px;
     font-size: 22px;
     background-color: #45474D;
     color: #85BFDC;
-    width: 100%;
+
+
 }

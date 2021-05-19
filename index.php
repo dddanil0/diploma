@@ -21,7 +21,7 @@
                        <div class="form-box">
                 <div class="add-article_text-box">
                     <h3>Тип наименования</h3>
-                    <input type="text" name="item_type" value="Упаковка">
+                    <input type="text" name="item_type"  value="Упаковка">
 
                 </div>
                 <div class="add-article_text-box">
@@ -56,27 +56,38 @@
                 </div>
 
             </div>
-            <button class="submit-button">Отправить</button>
-            <div class="output-database_info">
-                <?php
-                $item_for_crud = get_data_from_database();
-                ?>
-                <?php foreach ($item_for_crud as $item_for_crud): ?>
-                <div class="item_for_crud">
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_type']?></div>
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_name']?></div>
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_characteristic']?></div>
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_balance']?></div>
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_movement']?></div>
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_min_balance']?></div>
-                    <div class="output-item_for_crud"><?=$item_for_crud['item_cost']?></div>
-                </div>
-                <?php endforeach; ?>
+            <div class="submit-button">
+                <button>Отправить</button>
             </div>
-
         </form>
     </div>
 
-</div>
+    <div class="table_item_for_crud"><table>
+            <th>Тип наименования</th>
+            <th>Название</th>
+            <th>Параметры</th>
+            <th>Остаток</th>
+            <th>Движение (шт)</th>
+            <th>Минимальное кол-во</th>
+            <th>Стоимость (руб)</th>
+
+			<?php
+			$item_for_crud = get_data_from_database();
+			?>
+			<?php foreach ($item_for_crud as $item_for_crud): ?>
+                <tr>
+                    <td class=""><?=$item_for_crud['item_type']?></td>
+                    <td class=""><?=$item_for_crud['item_name']?></td>
+                    <td class=""><?=$item_for_crud['item_characteristic']?></td>
+                    <td class=""><?=$item_for_crud['item_balance']?></td>
+                    <td class=""><?=$item_for_crud['item_movement']?></td>
+                    <td class=""><?=$item_for_crud['item_min_balance']?></td>
+                    <td class=""><?=$item_for_crud['item_cost']?></td>
+                </tr>
+			<?php endforeach; ?>
+
+        </table></div>
+
+
 </body>
 </html>
