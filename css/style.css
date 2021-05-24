@@ -4,7 +4,10 @@ body {
     font-family: sans-serif;
 
 }
-
+footer {
+    width: 100%;
+    height: 100px;
+}
 
 .storage-form form .form-box{
     height: 400px;

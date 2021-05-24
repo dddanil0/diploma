@@ -3,6 +3,7 @@
     $hostname = 'localhost';
     $password = 'diploma';
     $database = 'diploma';
+    $dataTable = 'items_production_main';
 
     $link = mysqli_connect($hostname, $username, $password, $database);
 

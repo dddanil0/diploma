@@ -1,8 +1,8 @@
 <?php
     function get_categories() {
 
-        global $link;
-        $sql = "SELECT * FROM `items_production_main`";
+        global $link,   $dataTable;
+        $sql = "SELECT * FROM `  $dataTable`";
         $result = mysqli_query($link, $sql);
         $categories = mysqli_fetch_all($result, MYSQLI_ASSOC);
 

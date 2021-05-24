@@ -63,6 +63,7 @@
     </div>
 
     <div class="table_item_for_crud"><table>
+            <th>ID</th>
             <th>Тип наименования</th>
             <th>Название</th>
             <th>Параметры</th>
@@ -70,24 +71,28 @@
             <th>Движение (шт)</th>
             <th>Минимальное кол-во</th>
             <th>Стоимость (руб)</th>
+            <th>Действие</th>
 
 			<?php
 			$item_for_crud = get_data_from_database();
 			?>
 			<?php foreach ($item_for_crud as $item_for_crud): ?>
                 <tr>
-                    <td class=""><?=$item_for_crud['item_type']?></td>
-                    <td class=""><?=$item_for_crud['item_name']?></td>
-                    <td class=""><?=$item_for_crud['item_characteristic']?></td>
-                    <td class=""><?=$item_for_crud['item_balance']?></td>
-                    <td class=""><?=$item_for_crud['item_movement']?></td>
-                    <td class=""><?=$item_for_crud['item_min_balance']?></td>
-                    <td class=""><?=$item_for_crud['item_cost']?></td>
+                    <td></td>
+                    <td><?=$item_for_crud['item_type']?></td>
+                    <td><?=$item_for_crud['item_name']?></td>
+                    <td><?=$item_for_crud['item_characteristic']?></td>
+                    <td><?=$item_for_crud['item_balance']?></td>
+                    <td><?=$item_for_crud['item_movement']?></td>
+                    <td><?=$item_for_crud['item_min_balance']?></td>
+                    <td><?=$item_for_crud['item_cost']?></td>
+                    <td><a href="db/updateProduct.php">Изменить</a>/<br><a href="">Удалить</a></td>
                 </tr>
 			<?php endforeach; ?>
 
         </table></div>
-
+        <footer>
+        </footer>
 
 </body>
 </html>
