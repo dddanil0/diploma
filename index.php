@@ -78,7 +78,7 @@
 			?>
 			<?php foreach ($item_for_crud as $item_for_crud): ?>
                 <tr>
-                    <td></td>
+                    <td><?=$item_for_crud['id']?></td>
                     <td><?=$item_for_crud['item_type']?></td>
                     <td><?=$item_for_crud['item_name']?></td>
                     <td><?=$item_for_crud['item_characteristic']?></td>
@@ -86,7 +86,7 @@
                     <td><?=$item_for_crud['item_movement']?></td>
                     <td><?=$item_for_crud['item_min_balance']?></td>
                     <td><?=$item_for_crud['item_cost']?></td>
-                    <td><a href="db/updateProduct.php">Изменить</a>/<br><a href="">Удалить</a></td>
+                    <td><a href="db/updateProduct.php?id=<?=$item_for_crud['id']?>">Изменить</a>/<br><a href="">Удалить</a></td>
                 </tr>
 			<?php endforeach; ?>
 

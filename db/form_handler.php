@@ -8,6 +8,7 @@
 	$_POST['item_cost'] *= 1.0;
 
 
+
 	$item_type = $_POST['item_type'];
 	$item_name = $_POST['item_name'];
 
